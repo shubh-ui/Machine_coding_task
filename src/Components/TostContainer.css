@@ -1,0 +1,55 @@
+.ButtonContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.TostContainer {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.Tost {
+    width: 15rem;
+    height: 2.5rem;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    padding-left: 5px;
+    margin: 5px;
+    animation: slide 1s;
+
+}
+
+.btnRemoveTost{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transfrom: translateX(0%);
+  } 
+}
+
+.success {
+    background-color: green;
+}
+
+.info{
+    background-color: cadetblue;
+}
+.warning {
+    background-color: gold;
+}
+.error {
+    background-color: red;
+}
