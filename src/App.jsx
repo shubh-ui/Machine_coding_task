@@ -5,6 +5,7 @@ import "./App.css";
 import StarRating from "./Components/StarRating";
 import InfiniteScroll from "./Components/InfiniteScroll";
 import Cart from "./Components/Cart";
+import CustomeInput from "./Components/CustomeInput";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,7 +15,9 @@ function App() {
       <div>
         {/* <StarRating /> */}
         {/* <InfiniteScroll /> */}
-        <Cart />
+        {/* <Cart /> */}
+
+        <CustomeInput type="INPUT_NUMBER" />
       </div>
     </>
   );
