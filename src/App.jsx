@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import StarRating from "./Components/StarRating";
 import InfiniteScroll from "./Components/InfiniteScroll";
+import Cart from "./Components/Cart";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,7 +13,8 @@ function App() {
     <>
       <div>
         {/* <StarRating /> */}
-        <InfiniteScroll />
+        {/* <InfiniteScroll /> */}
+        <Cart />
       </div>
     </>
   );
