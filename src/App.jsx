@@ -6,9 +6,12 @@ import StarRating from "./Components/StarRating";
 import InfiniteScroll from "./Components/InfiniteScroll";
 import Cart from "./Components/Cart";
 import CustomeInput from "./Components/CustomeInput";
+import { useFetch } from "./Hooks/useFetch";
 
 function App() {
   const [count, setCount] = useState(0);
+  const {data, error, loading } = useFetch('https://dummyjson.com/products');
+  console.log({data, error, loading});
 
   return (
     <>
@@ -17,7 +20,8 @@ function App() {
         {/* <InfiniteScroll /> */}
         {/* <Cart /> */}
 
-        <CustomeInput type="INPUT_NUMBER" />
+        {/* <CustomeInput type="INPUT_NUMBER" /> */}
+
       </div>
     </>
   );
