@@ -13,3 +13,20 @@ Array.prototype.myMap = function (callback, args) {
 
 const mapOutput = nums.myMap(function (e) { return e * this.pol * 2 }, {pol: 10});
 
+
+
+Array.prototype.myFilter = function (callback, args) {
+    const result = [];
+    let index = 0, len = this.length;
+
+    while (index < len) {
+        if (callback.call(args, this[index], index, this)) {
+            result.push(this[index]);
+            index++;
+        }
+    }
+
+    return result;
+}
+
+const filterOutput = nums.myFilter(function(e) { return e > 4});
