@@ -45,3 +45,15 @@ Array.prototype.myReduce = function(callback, init, args) {
 }
 
 const reduceOutput = nums.myReduce((acc, e) => acc + e, 0)
+
+const myObj = {
+    a: 100,
+    b: 200
+}
+
+Function.prototype.myCall = function(context, ...args) {
+    context._this = this;
+    const result = context._this(...args);
+    delete context._this;
+    return result;
+}
