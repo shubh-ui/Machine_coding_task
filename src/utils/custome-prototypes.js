@@ -51,9 +51,25 @@ const myObj = {
     b: 200
 }
 
+function greet(a,b) {
+    console.log(`${this.a} with ${this.b} | ${a} with ${b}`)
+}
+
 Function.prototype.myCall = function(context, ...args) {
     context._this = this;
     const result = context._this(...args);
     delete context._this;
     return result;
 }
+
+Function.prototype.myBind = function(context ={}, ...args) {
+    context._this = this;
+    return function () {
+        const result = context._this(...args);
+        return result;
+    }
+}
+
+const a = greet.myBind(myObj, 10,20);
+a()
+
