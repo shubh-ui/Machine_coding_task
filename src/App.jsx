@@ -7,6 +7,7 @@ import InfiniteScroll from "./Components/InfiniteScroll";
 import Cart from "./Components/Cart";
 import CustomeInput from "./Components/CustomeInput";
 import { useFetch } from "./Hooks/useFetch";
+import DebounceFn from "./Components/DebounceFun";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
 
         {/* <CustomeInput type="INPUT_NUMBER" /> */}
 
+        <DebounceFn />
       </div>
     </>
   );
