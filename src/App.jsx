@@ -8,11 +8,13 @@ import Cart from "./Components/Cart";
 import CustomeInput from "./Components/CustomeInput";
 import { useFetch } from "./Hooks/useFetch";
 import DebounceFn from "./Components/DebounceFun";
+import TraficContainer from "./Components/TraficLight/Trafic-Container";
+import StarContainer from "./Components/Star_Rating/StartContainer";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const {data, error, loading } = useFetch('https://dummyjson.com/products');
-  console.log({data, error, loading});
+  // const [count, setCount] = useState(0);
+  // const {data, error, loading } = useFetch('https://dummyjson.com/products');
+  // console.log({data, error, loading});
 
   return (
     <>
@@ -23,7 +25,9 @@ function App() {
 
         {/* <CustomeInput type="INPUT_NUMBER" /> */}
 
-        <DebounceFn />
+        {/* <DebounceFn /> */}
+
+        <TraficContainer />
       </div>
     </>
   );
