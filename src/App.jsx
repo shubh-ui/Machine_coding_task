@@ -11,6 +11,7 @@ import DebounceFn from "./Components/DebounceFun";
 import TraficContainer from "./Components/TraficLight/Trafic-Container";
 import StarContainer from "./Components/Star_Rating/StartContainer";
 import NestedCheckbox from "./Components/Nested_Checkbox/NestedCheckbox";
+import AutoComplete from "./Components/AutoComplete/AutoComplete";
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -37,7 +38,9 @@ function App() {
           <LazyComponent />
         </Suspense> */}
 
-        <NestedCheckbox />
+        {/* <NestedCheckbox /> */}
+
+        <AutoComplete />
       </div>
     </>
   );
