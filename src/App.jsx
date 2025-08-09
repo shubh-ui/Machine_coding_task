@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { lazy, Suspense, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -10,11 +10,15 @@ import { useFetch } from "./Hooks/useFetch";
 import DebounceFn from "./Components/DebounceFun";
 import TraficContainer from "./Components/TraficLight/Trafic-Container";
 import StarContainer from "./Components/Star_Rating/StartContainer";
+import NestedCheckbox from "./Components/Nested_Checkbox/NestedCheckbox";
+  
+const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
 function App() {
   // const [count, setCount] = useState(0);
   // const {data, error, loading } = useFetch('https://dummyjson.com/products');
   // console.log({data, error, loading});
+
 
   return (
     <>
@@ -27,7 +31,13 @@ function App() {
 
         {/* <DebounceFn /> */}
 
-        <TraficContainer />
+        {/* <TraficContainer /> */}
+
+        {/* <Suspense fallback={<p> Loading...</p>}>
+          <LazyComponent />
+        </Suspense> */}
+
+        <NestedCheckbox />
       </div>
     </>
   );
