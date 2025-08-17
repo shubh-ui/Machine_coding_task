@@ -12,6 +12,8 @@ import TraficContainer from "./Components/TraficLight/Trafic-Container";
 import StarContainer from "./Components/Star_Rating/StartContainer";
 import NestedCheckbox from "./Components/Nested_Checkbox/NestedCheckbox";
 import AutoComplete from "./Components/AutoComplete/AutoComplete";
+import InputCode from "./Components/InputCode";
+import ReducerCounter from "./Components/ReducerCounter";
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -40,7 +42,11 @@ function App() {
 
         {/* <NestedCheckbox /> */}
 
-        <AutoComplete />
+        {/* <AutoComplete /> */}
+        
+        {/* <InputCode /> */}
+
+        <ReducerCounter />
       </div>
     </>
   );
