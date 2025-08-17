@@ -14,6 +14,7 @@ import NestedCheckbox from "./Components/Nested_Checkbox/NestedCheckbox";
 import AutoComplete from "./Components/AutoComplete/AutoComplete";
 import InputCode from "./Components/InputCode";
 import ReducerCounter from "./Components/ReducerCounter";
+import Container from "./Components/Contex-with-reducer/Container";
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -46,7 +47,9 @@ function App() {
         
         {/* <InputCode /> */}
 
-        <ReducerCounter />
+        {/* <ReducerCounter /> */}
+
+        <Container />
       </div>
     </>
   );
