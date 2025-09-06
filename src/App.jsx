@@ -15,6 +15,8 @@ import AutoComplete from "./Components/AutoComplete/AutoComplete";
 import InputCode from "./Components/InputCode";
 import ReducerCounter from "./Components/ReducerCounter";
 import Container from "./Components/Contex-with-reducer/Container";
+import ParentChildComunicationContainer from "./Components/Parent-child-compunincation/Parent";
+import OTP from "./Components/OTP/OTP";
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -49,7 +51,11 @@ function App() {
 
         {/* <ReducerCounter /> */}
 
-        <Container />
+        {/* <Container /> */}
+
+        {/* <ParentChildComunicationContainer /> */}
+
+        <OTP />
       </div>
     </>
   );
