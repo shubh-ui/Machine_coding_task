@@ -52,11 +52,7 @@ const ObserverInfiniteScroll = () => {
                             border:'1px solid #f0f0f0',
                             margin:'6px 0'
                         }}
-                        ref={(el) => {
-                            if(el) {
-                                arrRef.current[index] = el
-                            }
-                        }}
+                        ref={(el) => {arrRef.current[index] = el}}
                         >
                         {index + 1}
                     </div>

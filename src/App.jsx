@@ -19,6 +19,7 @@ import ParentChildComunicationContainer from "./Components/Parent-child-compunin
 import OTP from "./Components/OTP/OTP";
 import UserForm from "./Forms/UserForm";
 import DefaultInfiniteScroll from "./Components/Infinite-Scroll/Default-Infinite-Scroll";
+import ObserverInfiniteScroll from "./Components/Infinite-Scroll/Observer-Infinite-Scroll";
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -61,7 +62,9 @@ function App() {
 
         {/* <UserForm /> */}
 
-        <DefaultInfiniteScroll />
+        {/* <DefaultInfiniteScroll /> */}
+
+        <ObserverInfiniteScroll />
       </div>
     </>
   );
