@@ -20,6 +20,7 @@ import OTP from "./Components/OTP/OTP";
 import UserForm from "./Forms/UserForm";
 import DefaultInfiniteScroll from "./Components/Infinite-Scroll/Default-Infinite-Scroll";
 import ObserverInfiniteScroll from "./Components/Infinite-Scroll/Observer-Infinite-Scroll";
+import TicTacToe from "./Components/Tic-Tac-Toe/TicTacToe";
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -64,7 +65,9 @@ function App() {
 
         {/* <DefaultInfiniteScroll /> */}
 
-        <ObserverInfiniteScroll />
+        {/* <ObserverInfiniteScroll /> */}
+
+        <TicTacToe />
       </div>
     </>
   );
