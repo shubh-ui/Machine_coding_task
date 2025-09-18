@@ -10,7 +10,7 @@ import { useFetch } from "./Hooks/useFetch";
 import DebounceFn from "./Components/DebounceFun";
 import TraficContainer from "./Components/TraficLight/Trafic-Container";
 import StarContainer from "./Components/Star_Rating/StartContainer";
-import NestedCheckbox from "./Components/Nested_Checkbox/NestedCheckbox";
+// import NestedCheckbox from "./Components/Nested_Checkbox/NestedCheckbox";
 import AutoComplete from "./Components/AutoComplete/AutoComplete";
 import InputCode from "./Components/InputCode";
 import ReducerCounter from "./Components/ReducerCounter";
@@ -21,6 +21,11 @@ import UserForm from "./Forms/UserForm";
 import DefaultInfiniteScroll from "./Components/Infinite-Scroll/Default-Infinite-Scroll";
 import ObserverInfiniteScroll from "./Components/Infinite-Scroll/Observer-Infinite-Scroll";
 import TicTacToe from "./Components/Tic-Tac-Toe/TicTacToe";
+import NestedCheckBox from "./Components/Nested-Checkbox_v2/NestedCheckboxV2";
+import TraficLightV2 from "./Components/TraficLight_v2/TraficLightV2";
+import CustomMemo from "./Components/CustomMemo";
+import DayView from "./Components/Calender/DayView";
+import ModalContainer from "./Components/Modal/ModalContainer";
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -67,7 +72,17 @@ function App() {
 
         {/* <ObserverInfiniteScroll /> */}
 
-        <TicTacToe />
+        {/* <TicTacToe /> */}
+
+        {/* <NestedCheckBox /> */}
+
+        {/* <TraficLightV2 /> */}
+
+        {/* <CustomMemo /> */}
+
+        {/* <DayView /> */}
+        
+        <ModalContainer />
       </div>
     </>
   );
