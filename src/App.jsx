@@ -26,6 +26,7 @@ import TraficLightV2 from "./Components/TraficLight_v2/TraficLightV2";
 import CustomMemo from "./Components/CustomMemo";
 import DayView from "./Components/Calender/DayView";
 import ModalContainer from "./Components/Modal/ModalContainer";
+import ProgressContainer from "./Components/Progress/ProgressContainer";
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -82,7 +83,9 @@ function App() {
 
         {/* <DayView /> */}
         
-        <ModalContainer />
+        {/* <ModalContainer /> */}
+
+        <ProgressContainer />
       </div>
     </>
   );
