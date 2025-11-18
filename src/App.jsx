@@ -27,6 +27,7 @@ import CustomMemo from "./Components/CustomMemo";
 import DayView from "./Components/Calender/DayView";
 import ModalContainer from "./Components/Modal/ModalContainer";
 import ProgressContainer from "./Components/Progress/ProgressContainer";
+import CommentContainer from "./Components/Nested-Comments/CommentContainer";
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -85,7 +86,9 @@ function App() {
         
         {/* <ModalContainer /> */}
 
-        <ProgressContainer />
+        {/* <ProgressContainer /> */}
+
+        <CommentContainer />
       </div>
     </>
   );
