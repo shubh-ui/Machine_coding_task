@@ -28,6 +28,10 @@ import DayView from "./Components/Calender/DayView";
 import ModalContainer from "./Components/Modal/ModalContainer";
 import ProgressContainer from "./Components/Progress/ProgressContainer";
 import CommentContainer from "./Components/Nested-Comments/CommentContainer";
+import PostInfiniteScroll from "./Components/Infinite-Scroll/PostInfiniteScroll";
+import TicTacToeV2 from "./Components/TIcTacToeVersion2/TicTacToe";
+import DebounceContainer from "./Components/Debounce/DebounceContainer";
+
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
 
@@ -88,7 +92,13 @@ function App() {
 
         {/* <ProgressContainer /> */}
 
-        <CommentContainer />
+        {/* <CommentContainer /> */}
+
+        {/* <PostInfiniteScroll /> */}
+
+        {/* <TicTacToeV2 /> */}
+
+        <DebounceContainer />
       </div>
     </>
   );
