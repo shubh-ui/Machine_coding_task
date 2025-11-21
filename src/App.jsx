@@ -31,6 +31,7 @@ import CommentContainer from "./Components/Nested-Comments/CommentContainer";
 import PostInfiniteScroll from "./Components/Infinite-Scroll/PostInfiniteScroll";
 import TicTacToeV2 from "./Components/TIcTacToeVersion2/TicTacToe";
 import DebounceContainer from "./Components/Debounce/DebounceContainer";
+import AutoCompleteV2 from "./Components/AutoComplete/AutoCompleteV2";
 
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
@@ -98,7 +99,11 @@ function App() {
 
         {/* <TicTacToeV2 /> */}
 
-        <DebounceContainer />
+        {/* <DebounceContainer /> */}
+
+        {/* <AutoCompleteV2 /> */}
+
+        <StarContainer />
       </div>
     </>
   );
