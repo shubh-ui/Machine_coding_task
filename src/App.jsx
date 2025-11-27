@@ -32,6 +32,10 @@ import PostInfiniteScroll from "./Components/Infinite-Scroll/PostInfiniteScroll"
 import TicTacToeV2 from "./Components/TIcTacToeVersion2/TicTacToe";
 import DebounceContainer from "./Components/Debounce/DebounceContainer";
 import AutoCompleteV2 from "./Components/AutoComplete/AutoCompleteV2";
+import TraficLightContainerV3 from "./Components/TraficLight/TraficLightContainerV3";
+import ProgressV2 from "./Components/Progress/ProgressV2";
+import RetrieWithCache from "./Components/RetrieWithCache/RetrieWithCache";
+import { useFetchWithCache } from "./Hooks/useFetchWithCache";
 
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
@@ -41,6 +45,8 @@ function App() {
   // const {data, error, loading } = useFetch('https://dummyjson.com/products');
   // console.log({data, error, loading});
 
+    const state = useFetchWithCache('https://dummyjson.com/products',{}, {retries: 5});
+    console.log('state from app', state)
 
   return (
     <>
@@ -103,7 +109,13 @@ function App() {
 
         {/* <AutoCompleteV2 /> */}
 
-        <StarContainer />
+        {/* <StarContainer /> */}
+
+        {/* <TraficLightContainerV3 /> */}
+
+        {/* <ProgressV2 /> */}
+
+        <RetrieWithCache />
       </div>
     </>
   );
