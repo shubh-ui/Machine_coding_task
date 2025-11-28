@@ -36,6 +36,8 @@ import TraficLightContainerV3 from "./Components/TraficLight/TraficLightContaine
 import ProgressV2 from "./Components/Progress/ProgressV2";
 import RetrieWithCache from "./Components/RetrieWithCache/RetrieWithCache";
 import { useFetchWithCache } from "./Hooks/useFetchWithCache";
+import FrontendPagination from "./Components/Pagination/FrontendPagination";
+import ToastContainer from "./Components/Toast/ToastContainer";
 
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
@@ -115,7 +117,12 @@ function App() {
 
         {/* <ProgressV2 /> */}
 
-        <RetrieWithCache />
+        {/* <RetrieWithCache /> */}
+
+        {/* <FrontendPagination /> */}
+
+          <ToastContainer />
+
       </div>
     </>
   );
