@@ -38,6 +38,7 @@ import RetrieWithCache from "./Components/RetrieWithCache/RetrieWithCache";
 import { useFetchWithCache } from "./Hooks/useFetchWithCache";
 import FrontendPagination from "./Components/Pagination/FrontendPagination";
 import ToastContainer from "./Components/Toast/ToastContainer";
+import Accordian from "./Components/Accordian/Accordian";
 
   
 const LazyComponent  = lazy(() => import('./Components/TraficLight/Trafic-Container'))
@@ -121,7 +122,9 @@ function App() {
 
         {/* <FrontendPagination /> */}
 
-          <ToastContainer />
+          {/* <ToastContainer /> */}
+
+          <Accordian />
 
       </div>
     </>
